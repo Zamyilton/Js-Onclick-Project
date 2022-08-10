@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(https://c4.wallpaperflare.com/wallpaper/800/831/598/digital-art-neon-mountains-lake-wallpaper-preview.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgba(31, 28, 28, 0.836);
+            cursor: default;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5em;
+            width: 90%;
+            text-align: center;
+            z-index: 700;
+            cursor: none;
+        }
+
+        .click {
+            color: white;
+        }
+
+        .click:hover {
+            background: transparent;
+            transition: 1s ease;
+            margin-bottom: 1%;
+        }
+
+        .container:hover {
+            margin-top: 2%;
+            transition: 1s ease-in-out;
+            background: url(https://c4.wallpaperflare.com/wallpaper/531/951/621/digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-preview.jpg);
+            background-size: cover;
+        }
+
+
+
+        button {
+            padding: 5px 20px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border-color: white;
+            background: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Don't touch HIM 🤐</h1>
+        <button class="click">Touch ME</button>
+    </div>
+</body>
+<script>
+    document.querySelector(".click").addEventListener("click", function (e) {
+        e.target.parentNode.children[0].innerHTML = "I Told You not too"
+    })
+</script>
+
+</html>
